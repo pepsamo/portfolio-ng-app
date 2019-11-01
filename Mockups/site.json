@@ -1,0 +1,14 @@
+{
+  "title": "Amoruso Front End Developer",
+  "menuList": ["Home",
+               "Su di me",
+               "Skills",
+               "Studi",
+               "Esperienze lavorative",
+               "Progetti",
+               "Contatti"],
+  "links": [{"gitHub":"https://github.com/pepsamo"},
+            {"instagram":"https://www.instagram.com/peps_amo/"},
+            {"linkedin":"https://www.linkedin.com/in/giuseppe-giovanni-amoruso-a36926158/"},
+            {"mail":"mailto:giuseppegiovanni.amoruso@gmail.com"}]
+}
