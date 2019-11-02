@@ -1,0 +1,8 @@
+@mixin gradient($direction ,$color1, $color2, $color3) {
+    background-image: linear-gradient(
+        to $direction, 
+        $color1, 
+        $color2,
+        $color3
+    );
+}
