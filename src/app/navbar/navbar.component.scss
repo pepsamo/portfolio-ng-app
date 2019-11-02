@@ -1,0 +1,13 @@
+@import '../../style/mixins';
+@import '../../style/variables';
+
+.navbar {
+  @include gradient(bottom right,
+                    $primary-color1,
+                    $primary-color2,
+                    $primary-color3);
+  .navbar-brand,
+  .collapse ul li a {
+    color: $text-color;
+  }
+}
