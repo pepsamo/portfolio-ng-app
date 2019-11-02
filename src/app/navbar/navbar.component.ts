@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import site from '../../Mockups/site.json';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +13,5 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  siteComponent: string = site;
 }

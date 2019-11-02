@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">
-    Brand
+    {{siteComponent["title"]}}
   </a>
 
   <button class="navbar-toggler" type="button">
@@ -11,11 +11,11 @@
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Item 1</a>
+        <a class="nav-link" href="#">{{siteComponent["menuList"][0]}}</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Item 2</a>
+        <a class="nav-link" href="#">{{siteComponent["menuList"][1]}}</a>
       </li>
     </ul>
   </div>
