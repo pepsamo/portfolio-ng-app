@@ -14,5 +14,5 @@ export class NavbarComponent implements OnInit, Site {
 
   ngOnInit() {
   }
-  siteComponent: siteComponent = site;
+  siteComponent= site;
 }
