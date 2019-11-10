@@ -14,17 +14,25 @@
         </li>
       </ul>
       <ul class="navbar-nav mr-auto">
-        <li>
-          <a href="{{siteComponent['links'][0]['gitHub']}}"></a>
+        <li class="nav-item">
+          <a href="{{siteComponent['links'][0]['gitHub']}}">
+            <fa-icon [icon]="faGithub" ></fa-icon>
+          </a>
         </li>
-        <li>
-          <a href="{{siteComponent['links'][1]['instagram']}}"></a>
+        <li class="nav-item">
+          <a href="{{siteComponent['links'][1]['instagram']}}">
+            <fa-icon [icon]="faInstagram"></fa-icon>
+          </a>
         </li>
-        <li>
-         <a href="{{siteComponent['links'][2]['linkedin']}}"></a>
+        <li class="nav-item">
+         <a href="{{siteComponent['links'][2]['linkedin']}}">
+           <fa-icon [icon]="faLinkedin"></fa-icon>
+         </a>
         </li>
-         <li>
-          <a href="{{siteComponent['links'][3]['mail']}}"></a>
+         <li class="nav-item">
+          <a href="{{siteComponent['links'][3]['mail']}}">
+            <fa-icon [icon]="faGmail"></fa-icon>
+          </a>
         </li>
       </ul>
     </div>
