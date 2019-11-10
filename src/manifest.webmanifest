@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-ng-app",
-  "short_name": "portfolio-ng-app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
-  "display": "standalone",
+  "name": "AFED - Amoruso Front End Developer",
+  "short_name": "AFED",
+  "theme_color": "#2980B9",
+  "background_color": "#eeeeee",
+  "display": "broswer",
   "scope": "/",
   "start_url": "/",
   "icons": [
