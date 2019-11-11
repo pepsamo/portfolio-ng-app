@@ -8,7 +8,8 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss',
-              '../../style/_mixins.scss']
+              '../../style/_mixins.scss',
+              ]
 })
 export class NavbarComponent implements OnInit, Site {
 
