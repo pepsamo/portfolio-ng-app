@@ -10,4 +10,25 @@
   .collapse ul li a {
     color: $text-color;
   }
+  #navbarSupportedContent ul li{
+    #gitHub:hover {
+      color: rgb(36, 41, 46);
+    }
+    #instagram:hover {
+      background-image: radial-gradient(circle at 100% 100%, #fdf497 0%,
+		                                                         #fdf497 5%,
+		                                                        #fd5949 45%,
+		  #d6249f 60%,
+		  #285AEB 90%);
+      // color: transparent;
+      background-clip: text;
+    }
+    #linkedin:hover {
+      background-color: rgb(0,119, 181);
+    }
+    #gmail:hover {
+      color: rgb(178, 49, 33);
+      background-color: rgb(238,238,238);
+    }
+  }
 }
