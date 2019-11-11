@@ -1,8 +1,50 @@
 @mixin gradient($direction ,$color1, $color2, $color3) {
     background-image: linear-gradient(
-        to $direction, 
-        $color1, 
+        to $direction,
+        $color1,
         $color2,
          $color3
     );
+}
+
+@mixin zoom($animatioName, $direction, $time, $boomerang) {
+  -webkit-animation: $animatioName $direction $time $boomerang;
+  -moz-animation: $animatioName $direction $time $boomerang;
+  -o-animation: $animatioName $direction $time $boomerang;
+  animation: $animatioName $direction $time $boomerang;
+}
+
+@mixin zoomAnimation($param1, $param2) {
+  @-webkit-keyframes zoom {
+    0% {
+      transform: $param1;
+    }
+    100% {
+      transform: $param2;
+    }
+  }
+  @-moz-keyframes zoom {
+    0% {
+      transform: $param1;
+    }
+    100% {
+      transform: $param2;
+    }
+  }
+  @-o-keyframes zoom {
+    0% {
+      transform: $param1;
+    }
+    100% {
+      transform: $param2;
+    }
+  }
+  @keyframes zoom {
+    0% {
+      transform: $param1;
+    }
+    100% {
+      transform: $param2;
+    }
+  }
 }
