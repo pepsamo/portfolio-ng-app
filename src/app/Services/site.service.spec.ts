@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FontAwesomeService } from './font-awesome.service';
+import { SiteService } from './site.service';
 
-describe('FontAwesomeService', () => {
+describe('SiteService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: FontAwesomeService = TestBed.get(FontAwesomeService);
+    const service: SiteService = TestBed.get(SiteService);
     expect(service).toBeTruthy();
   });
 });
