@@ -1,3 +1,5 @@
 export interface Site {
-  siteComponent: string;
+  title: string;
+  menulist: string[];
+  links: {subtitle: string}[];
 }
