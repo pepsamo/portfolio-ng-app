@@ -1,0 +1,10 @@
+.navbar {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2980b9), color-stop(#4995c7), to(#72b0d9));
+  background-image: linear-gradient(to bottom right, #2980b9, #4995c7, #72b0d9);
+}
+
+.navbar .navbar-brand,
+.navbar .collapse ul li a {
+  color: #ecf0f1;
+}
+/*# sourceMappingURL=navbar.component.css.map */
