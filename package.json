@@ -6,7 +6,7 @@
     "start": "ng serve --port 4300",
     "build": "ng build",
     "test": "ng test",
-    "lint": "eslint ./",
+    "lint": "eslint 'src/**/*.ts'",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -42,6 +42,7 @@
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
     "buffer": "^5.4.3",
     "codelyzer": "^5.0.0",
     "eslint": "^6.6.0",
