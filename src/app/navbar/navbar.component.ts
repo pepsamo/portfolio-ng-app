@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Site } from '../Interfaces/site';
-import { SiteService } from '../Services/site.service';
+import site from '../../Mockups/site.json';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,19 +11,15 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
               '../../style/_mixins.scss',
               ]
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, Site {
 
   constructor() { }
 
   ngOnInit() {
-    // this.siteService.getSite().subscribe(
-    //   data => console.log(data)
-    // );
   }
-  siteComponent;
+  siteComponent= site;
   faGithub = faGithub;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
   faGmail = faEnvelopeSquare;
-
 }
