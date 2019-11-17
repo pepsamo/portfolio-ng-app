@@ -1,36 +1,36 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-    <a class="navbar-brand" href="#">{{siteComponent["title"]}}</a>
+    <a class="navbar-brand" href="#">{{siteService.site.title}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto"
-      *ngFor="let menuVoice of siteComponent['menuList']">
+      *ngFor="let voice of siteService.site.menulist">
         <li class="nav-item">
           <a class="nav-link" href="#">
-            {{menuVoice}}
+            {{voice}}
           </a>
         </li>
       </ul>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a href="{{siteComponent['links'][0]['gitHub']}}">
+          <a href="{{siteService.site.links[0]}}">
             <fa-icon [icon]="faGithub" id="gitHub"></fa-icon>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{siteComponent['links'][1]['instagram']}}">
+          <a href="{{siteService.site.links[1]}}">
             <fa-icon [icon]="faInstagram" id="instagram"></fa-icon>
           </a>
         </li>
         <li class="nav-item">
-         <a href="{{siteComponent['links'][2]['linkedin']}}">
+         <a href="{{siteService.site.links[2]}}">
            <fa-icon [icon]="faLinkedin" id="linkedin"></fa-icon>
          </a>
         </li>
          <li class="nav-item">
-          <a href="{{siteComponent['links'][3]['mail']}}">
+          <a href="{{siteService.site.links[3]}}">
             <fa-icon [icon]="faGmail" id="gmail"></fa-icon>
           </a>
         </li>

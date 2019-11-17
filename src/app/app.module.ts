@@ -8,8 +8,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import { HttpClient } from 'selenium-webdriver/http';
-import { Observable } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -21,9 +19,7 @@ import { Observable } from 'rxjs';
     NgbModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    HttpClient,
-    Observable
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

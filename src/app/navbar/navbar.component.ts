@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Site } from '../Interfaces/site';
-import site from '../../Mockups/site.json';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import {SiteService} from "../service/site.service";
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss',
-              '../../style/_mixins.scss',
+              '../../style/_mixins.scss'
               ]
 })
-export class NavbarComponent implements OnInit, Site {
+export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private siteService: SiteService) { }
 
   ngOnInit() {
+    this.siteService.getSite();
   }
-  siteComponent= site;
   faGithub = faGithub;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
